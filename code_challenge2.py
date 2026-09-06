@@ -19,7 +19,7 @@ money = money-five*5
 one = money//1
 money = money-one*1
 
-print("Money to Deposit -->", money!)
+print("Money to Deposit -->", money)
 print("Money to Deposit -->", thousand)
 print("Money to Deposit -->", fivehundred)
 print("Money to Deposit -->", twohundred)
