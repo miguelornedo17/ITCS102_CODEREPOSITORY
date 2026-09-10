@@ -1,10 +1,10 @@
 sender = input("Sender Name --> ")
 item = input("Type of item --> ")
-isFragile = bool(input("is it fragile (if not press Enter) --> "))
+isFragile = eval(input("is it fragile (if not press Enter)--> "))
 weight = float(input("Weight of the item in kg --> "))
 distance = float(input("Distance in km --> "))
-is_express = bool(input("Express (if not press Enter) --> "))
-is_international = bool(input("International (if not press Enter) --> "))
+is_express = eval(input("Express (if not press Enter)--> "))
+is_international = eval(input("International (if not press Enter)--> "))
 
 #Calculation steps
 base_cost = (weight * 2.50) + (distance * 0.15)
@@ -31,6 +31,11 @@ else :
 
 print("---------------------")
 print("Name of the sender --> ", sender)
-print("Product name --> ", item)
+print("Product name -->", item)
 print("Total Price --> PHP", Total)
 
+if isFragile == True :
+	print("Product is Fragile")
+
+else :
+	print("Product is not Fragile")
