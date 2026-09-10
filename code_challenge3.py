@@ -1,10 +1,10 @@
 sender = input("Sender Name --> ")
 item = input("Type of item --> ")
-isFragile = eval(input("is it fragile (if not press Enter)--> "))
+isFragile = eval(input("is it fragile --> "))
 weight = float(input("Weight of the item in kg --> "))
 distance = float(input("Distance in km --> "))
-is_express = eval(input("Express (if not press Enter)--> "))
-is_international = eval(input("International (if not press Enter)--> "))
+is_express = eval(input("Express --> "))
+is_international = eval(input("International --> "))
 
 #Calculation steps
 base_cost = (weight * 2.50) + (distance * 0.15)
