@@ -17,11 +17,11 @@ elif is_international == True and is_express == True :
 	print("International Express Product")
 	Total = (base_cost * 1.40) + 50
 	
-elif is_international == True and weight >= 20 or is_express == True :
+elif is_international == True and weight > 20 or is_express == True :
 	print("The Product is Express or Heavy international")
 	Total = (base_cost * 1.20) + 25
 
-elif weight >= 30 or distance >= 1000 :
+elif weight > 30 or distance > 1000 :
 	print("Oversized Weight")
 	Total = base_cost + 30
 
